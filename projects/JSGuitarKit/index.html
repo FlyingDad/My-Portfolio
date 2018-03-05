@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Major Guitar Chords</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="header-img">
+    <img src="img/guitar.jpg" alt="">
+  </div>
+
+  <div class="keys">
+    <div class="key key-example">
+      <span>Chord</span>
+      <kbd class="sound">Keyboard Key</kbd>
+    </div>
+  </div>
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <span>A</span>
+      <kbd class="sound">A</kbd>
+    </div>
+    <div data-key="83" class="key">
+      <span>B</span>
+      <kbd class="sound">S</kbd>
+    </div>
+    <div data-key="68" class="key">
+      <span>C</span>
+      <kbd class="sound">D</kbd>
+    </div>
+    <div data-key="70" class="key">
+      <span>D</span>
+      <kbd class="sound">F</kbd>
+    </div>
+    <div data-key="71" class="key">
+      <span>E</span>
+      <kbd class="sound">G</kbd>
+    </div>
+    <div data-key="72" class="key">
+      <span>F</span>
+      <kbd class="sound">H</kbd>
+    </div>
+    <div data-key="74" class="key">
+      <span>G</span>
+      <kbd class="sound">J</kbd>
+    </div>
+  </div>
+
+  <audio data-key="65" src="sounds/a-major.mp3"></audio>
+  <audio data-key="83" src="sounds/b-major.mp3"></audio>
+  <audio data-key="68" src="sounds/c-major.mp3"></audio>
+  <audio data-key="70" src="sounds/d-major.mp3"></audio>
+  <audio data-key="71" src="sounds/e-major.mp3"></audio>
+  <audio data-key="72" src="sounds/f-major.mp3"></audio>
+  <audio data-key="74" src="sounds/g-major.mp3"></audio>
+
+  <script src="js/guitar.js"></script>
+
+
+</body>
+
+</html>

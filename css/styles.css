@@ -1,0 +1,245 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+
+/* Global styles
+-------------------------*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 70px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  color: #EF233C;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  text-decoration: none;
+  background: #EF233C;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Header and Footer
+-------------------------*/
+
+header {
+  position: relative;
+  padding-top: 50px;
+}
+
+header,
+footer {
+  background: #000066;
+  color: #b3b3b3;
+}
+
+/* header */
+
+header h1,
+header h2 {
+  color: #EDF2F4;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Navigation */
+
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav a.active {
+  border: 2px;
+  color: #2B2D42;
+}
+
+/* About
+-------------------------*/
+.about-section {
+  background: url(https://picsum.photos/600/800?image=931) no-repeat fixed;
+  background-size: cover;
+}
+.about {
+  width: 80%;
+  
+}
+
+/* Projects
+-------------------------*/
+
+.app-img {
+  width: 75%;
+}
+
+.work {
+  background: #EDF2F4;
+}
+
+h3~p {
+  margin: 0;
+}
+
+.job-description {
+  margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+/* Education
+-------------------------*/
+
+/* https://picsum.photos/200/300?image=974 */
+
+.education {
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), url(https://picsum.photos/600/800?image=931) no-repeat fixed;
+  background-size: cover;
+  color: #2B2D42;
+}
+
+p+h3 {
+  margin-top: 30px;
+}
+
+
+/* Web projects */
+
+#projects {
+  background: rgb(232, 233, 238);
+}
+
+.spacer {
+  height: 20px;
+}
+.web-projects-flex {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  flex-flow: row wrap;
+}
+
+.web-projects-flex > div {
+  background-color: white;
+  border: 2px solid;
+  border-color: rgba(174, 180, 202, 0.575);;
+  /* background-color: blue; */
+  border-radius: 6px;
+  margin: 0 auto;
+  font-size: 20px;
+  width: 400px;;
+  height: 400px;
+  text-align: center;
+  color: rgb(6, 16, 112);
+  box-shadow: 8px 8px 6px rgba(103, 103, 110, 0.2);
+}
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 699px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+  .app-img {
+    width: 30%;
+  }
+}

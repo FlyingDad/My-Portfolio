@@ -1,0 +1,67 @@
+html {
+  font-size: 10px;
+  /* background: url(../img/guitar.jpg) bottom center; */
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#header-img{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height: 500px;
+}
+p {
+  text-align: center;
+  font-size: 3em;
+}
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 10vh;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 4rem;
+  padding: 1rem .5rem;
+  transition: all .17s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.key-example {
+  width: 250px;
+  height: 60px;
+}
+
+.playing {
+  transform: scale(1.2);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 2rem;
+}
+
+.sound {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
