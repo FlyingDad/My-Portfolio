@@ -54,10 +54,9 @@ a:hover {
 }
 
 .content-wrap {
-  max-width: 950px;
+  /* max-width: 950px; */
   margin: 0 auto;
-  padding: 60px 50px;
-  overflow: hidden;
+  padding: 10px 50px;
 }
 
 .uppercase {
@@ -82,7 +81,8 @@ header {
 
 header,
 footer {
-  background: #000066;
+  background: linear-gradient(160deg, #0d1068,
+   #3f0285 65%);
   color: #b3b3b3;
 }
 
@@ -93,10 +93,30 @@ header h2 {
   color: #EDF2F4;
 }
 
-.profile-img {
-  border-radius: 50%;
+#flex-header {
+  display: flex;
+	justify-content: center;
+	height: 400px;
+	align-items: center;
 }
 
+#left-header {
+  flex: 2;
+  max-width: 450px;
+}
+
+#right-header {
+  flex: 1;
+  padding: 0 0 0 20px;;
+  max-width: 450px;
+}
+
+#header-img {
+  max-width: 100%;
+	max-height: 100%;
+	border-radius: 50%;
+	opacity: 0.7;
+}
 .download {
   position: absolute;
   bottom: 0;
@@ -116,14 +136,60 @@ footer {
 
 /* Navigation */
 
+.nav {
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(180deg, #0d1068,
+  #3f0285 95%);
+  position: relative;
+  text-align: center;
+}
+
+.nav > .nav-header {
+  display: inline;
+
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: rgb(52, 9, 205);
+  padding: 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 14px;
+  text-decoration: none;
+  color: #13bacd;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+/* 
 nav {
   text-align: center;
   background: linear-gradient(rgb(213, 221, 236), 
   rgba(255, 255, 255, 1));
   /* background: white; */
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0;
   width: 100%;
+  white-space: nowrap;
 }
 
 nav a {
@@ -137,16 +203,17 @@ nav a {
 nav a.active {
   border: 2px;
   color: #2B2D42;
-}
+} */ 
 
 /* About
 -------------------------*/
 .about-section {
-  background: url(https://picsum.photos/600/800?image=931) no-repeat fixed;
-  background-size: cover;
+  /* background: url(https://picsum.photos/600/800?image=931) no-repeat fixed;
+  background-size: cover; */
+  background: white;
 }
 .about {
-  width: 80%;
+  max-width: 900px;
   
 }
 
@@ -221,8 +288,16 @@ p+h3 {
 }
 
 /* Media Queries */
+@media (max-width: 760px) {
+  #header-img {
+    display: none;
+  }
+  /* #right-header{
+    visibility: collapse;
+  } */
+}
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .col-narrow {
     width: 30%;
     float: left;
@@ -234,14 +309,78 @@ p+h3 {
   }
 }
 
-@media (max-width: 699px) {
-  header {
-    text-align: center;
-  }
+@media (max-width: 799px) {
+
   .profile-img {
     width: 200px;
   }
   .app-img {
     width: 30%;
+  }
+}
+
+/* @media (max-width: 460px) {
+
+  header {
+    position: relative;
+    padding-top: 250px;
+  }
+} */
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 50px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgb(0, 9, 104);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 10;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(60vh - 50px);
+    overflow-y: auto;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 0;
   }
 }
