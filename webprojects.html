@@ -22,26 +22,40 @@
 </head>
 
 <body>
-	<header id="about">
-		<a href="files/Michael_Kroth_Resume.pdf" class="btn download" download>Resume PDF</a>
-		<nav>
-			<a href="index.html">About</a>
-			<a href="education.html">Education</a>
-			<a href="iosprojects.html">iOS Projects</a>
-			<a class="active" href="#">Web Projects</a>
-			<a href="#contact">Contact</a>
-		</nav>
-
-		<div class="content-wrap">
-			<!-- <img class="profile-img col-narrow" src="img/laptop.png" alt="Michael Kroth"> -->
-			<div class="col-wide">
-				<h1>Michael Kroth</h1>
-				<h2>Web Projects</h2>
-				<p>This portfolio site is hand coded with HTML and CSS. It doesn't use any external libraries/languages such as Bootstrap
-					or Material Design</p>
+		<div class="nav">
+				<div class="nav-btn">
+					<label for="nav-check">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+				</div>
+				<input type="checkbox" id="nav-check">
+				<nav class="nav-links">
+					<a href="index.html">About</a>
+					<a href="education.html">Education</a>
+					<a href="iosprojects.html">iOS Projects</a>
+					<a class="active" href="webprojects.html">Web Projects</a>
+					<a href="#contact">Contact</a>
+				</nav>
 			</div>
-		</div>
-	</header>
+		
+			<header class="content-wrap">
+				<a href="files/Michael_Kroth_Resume.pdf" class="btn download" download>Resume PDF</a>
+		
+				<div id="flex-header">
+					<div id="left-header">
+						<h1>Michael Kroth</h1>
+						<h2>Front-End Developer | iOS Developer</h2>
+						<p>Dedicated and motivated iOS Developer and Front-End Developer with a passion for computer programming. Skilled in
+							Swift (iOS), xCode, HTML5, CSS3, and JavaScript. </p>
+					</div>
+					<div id="right-header">
+						<img id="header-img" src="img/laptop.png" alt="Laptop Image">
+					</div>
+				</div>
+		
+			</header>
 
 	<main>
 		<!-- // Projects -->

@@ -46,7 +46,7 @@ h3 {
 }
 
 a {
-  color: #EF233C;
+  color: rgb(31, 214, 255);
 }
 
 a:hover {
@@ -150,12 +150,12 @@ footer {
 
 }
 
-.nav > .nav-header > .nav-title {
+/* .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
   color: rgb(52, 9, 205);
   padding: 10px;
-}
+} */
 
 .nav > .nav-btn {
   display: none;
@@ -172,9 +172,11 @@ footer {
   text-decoration: none;
   color: #13bacd;
 }
-
+.nav .nav-links .active{
+  color: #d7e4ee;
+}
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(16, 112, 223, 0.3);
 }
 
 .nav > #nav-check {
@@ -207,14 +209,60 @@ nav a.active {
 
 /* About
 -------------------------*/
-.about-section {
+#about-section {
   /* background: url(https://picsum.photos/600/800?image=931) no-repeat fixed;
   background-size: cover; */
   background: white;
+  display: flex;
+  justify-content: center;
 }
-.about {
-  max-width: 900px;
+#about {
+  flex: 2;
+  max-width: 900px;  
+  /* border: 1px solid red; */
+  padding-right: 20px;
+}
+#about-sidebar {
+  padding-top: 50px;
+  flex: 1;
+  max-width: 200px;
+  /* border: 1px solid olivedrab; */
+}
+#about-sidebar img {
+  padding-top: 15px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* iOS Apps
+-------------------------*/
+#ios-header {
+  /* padding: 20px 0 20px 50px; */
+  color: rgb(245, 245, 245);
+  margin-bottom: 0;
+}
+.ios-section {
+  background: rgb(14, 14, 14);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.ios {
+  flex: 2;
+  max-width: 400px;  
+  /* border: 1px solid red; */
+  padding-right: 20px;
+  color: rgb(180, 180, 180);
+}
+.ios-sidebar {
+  flex: 1;
+  max-width: 200px;
   
+  /* border: 1px solid olivedrab; */
+}
+.ios-sidebar img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* Projects
@@ -242,14 +290,39 @@ h3~p {
 
 /* Education
 -------------------------*/
+/* #edu-header { */
+  /* padding: 20px 0 20px 50px; */
+  /* color: rgb(0, 0, 0);
+  margin-bottom: 20px;;
+  background-color: rgba(0, 128, 128, 0) */
+/* } */
+.edu-section {
+  /* background: rgb(14, 14, 14); */
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  background: linear-gradient(90deg rgba(229, 231, 235, 0.8),rgba(19, 1, 135, 0.893));
+}
+.edu {
+  flex: 1;
+  max-width: 400px;  
+  /* border: 1px solid red; */
+  padding-right: 20px;
+  color: rgb(31, 31, 31);
+}
+.edu-sidebar {
+  max-width: 200px;
+  
+  /* border: 1px solid olivedrab; */
+}
 
-/* https://picsum.photos/200/300?image=974 */
-
-.education {
-  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), url(https://picsum.photos/600/800?image=931) no-repeat fixed;
+/* .education {
+  padding-left: 50px;
+  background: linear-gradient(rgba(214, 217, 222, 0.8),
+   rgba(140, 140, 140, 0.803)), url(https://picsum.photos/600/800?image=931) no-repeat fixed;
   background-size: cover;
   color: #2B2D42;
-}
+} */
 
 p+h3 {
   margin-top: 30px;
@@ -259,7 +332,7 @@ p+h3 {
 /* Web projects */
 
 #projects {
-  background: rgb(232, 233, 238);
+  background: rgb(0, 0, 0);
 }
 
 .spacer {
@@ -284,7 +357,7 @@ p+h3 {
   height: 400px;
   text-align: center;
   color: rgb(6, 16, 112);
-  box-shadow: 8px 8px 6px rgba(103, 103, 110, 0.2);
+  box-shadow: 8px 8px 2px rgba(165, 109, 254, 0.495);
 }
 
 /* Media Queries */
@@ -292,6 +365,10 @@ p+h3 {
   #header-img {
     display: none;
   }
+  #about-sidebar img {
+    display: none;
+  }
+
   /* #right-header{
     visibility: collapse;
   } */

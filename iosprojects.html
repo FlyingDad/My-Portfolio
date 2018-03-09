@@ -8,13 +8,13 @@
 	<title>Michael Kroth | iOS Projects</title>
 
 	<!-- Code from realfavicongenerator.net -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Raleway:300" rel="stylesheet">
@@ -22,84 +22,97 @@
 </head>
 
 <body>
-	<header id="about">
-		<a href="files/Michael_Kroth_Resume.pdf" class="btn download" download>Resume PDF</a>
-		<nav>
+	<div class="nav">
+		<div class="nav-btn">
+			<label for="nav-check">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		</div>
+		<input type="checkbox" id="nav-check">
+		<nav class="nav-links">
 			<a href="index.html">About</a>
 			<a href="education.html">Education</a>
-			<a class="active" href="#">iOS Projects</a>
+			<a class="active" href="iosprojects.html">iOS Projects</a>
 			<a href="webprojects.html">Web Projects</a>
 			<a href="#contact">Contact</a>
 		</nav>
+	</div>
 
-		<div class="content-wrap">
-			<!-- <img class="profile-img col-narrow" src="img/laptop.png" alt="Michael Kroth"> -->
-			<div class="col-wide">
+	<header class="content-wrap">
+		<a href="files/Michael_Kroth_Resume.pdf" class="btn download" download>Resume PDF</a>
+
+		<div id="flex-header">
+			<div id="left-header">
 				<h1>Michael Kroth</h1>
-				<h2>iOS Projects</h2>
-				<p></p>
+				<h2>Front-End Developer | iOS Developer</h2>
+				<p>Dedicated and motivated iOS Developer and Front-End Developer with a passion for computer programming. Skilled in Swift
+					(iOS), xCode, HTML5, CSS3, and JavaScript. </p>
+			</div>
+			<div id="right-header">
+				<img id="header-img" src="img/laptop.png" alt="Laptop Image">
 			</div>
 		</div>
+
 	</header>
 
 
 	<main>
 		<!-- // Projects -->
-		<section id="projects" class="work">
-			<div class="content-wrap">
-				<h2>iOS Projects</h2>
-
-				<!-- Project Details: copy this whole block to add more jobs -->
-				<div class="col-wide">
-
-					<h3>Weather Allure</h3>
-					<p class="uppercase"></p>
-					<p>Jan 2018</p>
-					<p>A visually pleasing weather App.</p>
-					<!-- This list can be deleted if you don't want to use it. -->
-					<p>Features</p>
-					<ul>
-						<li>Customize Colors</li>
-						<li>Save locations</li>
-						<li>Extended hourly and daily forecasts.</li>
-					</ul>
-					<div id="796356486470639339" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml">
-						<a href="https://itunes.apple.com/us/app/weather-allure/id1307627943?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
-					</div>
-
+		<div class ="ios-section content-wrap">
+			<div class="ios">
+				<h2 id="ios-header">iOS Projects</h2>
+			</div>
+			<div class="ios-sidebar"><p></p></div>
+		</div>
+		<!-- Project Details: copy this whole block to add more projects -->
+		<section class="ios-section content-wrap">
+			<div class="ios">
+				<h3>Weather Allure</h3>
+				<p class="uppercase"></p>
+				<p>Jan 2018</p>
+				<p>A visually pleasing weather App.</p>
+				<p>Features</p>
+				<ul>
+					<li>Customize Colors</li>
+					<li>Save locations</li>
+					<li>Extended hourly and daily forecasts.</li>
+				</ul>
+				<div id="796356486470639339" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml">
+					<a href="https://itunes.apple.com/us/app/weather-allure/id1307627943?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
 				</div>
-				<!-- Add as many paragraphs as you need. -->
-				<div class="col-narrow job-description">
-					<img class="app-img" src="img/wa1.png" alt="Weather Allure">
+			</div>
+			<div class="ios-sidebar">
+				<img src="img/wa.png" alt="Weather Allure">
 
-					<!-- end of Job Details block. -->
+			</div>
+		</section>
+		<!-- end of project item -->
+
+		<section class="ios-section content-wrap">
+			<div class="ios">
+
+				<h3>Find a Pet</h3>
+				<p class="uppercase"></p>
+				<p>Sep 2017</p>
+				<p>Find a pet in local adoption shelters.</p>
+				</dic>
+				<p>Features</p>
+				<ul>
+					<li>Search by your location or zip code</li>
+					<li>Search for animal type</li>
+					<li>Detailed pet descriptions</li>
+					<li>Detailed shelter contact</li>
+				</ul>
+				<div id="332746611936547151" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml">
+					<a href="https://itunes.apple.com/us/app/find-a-pet/id1226531779?mt=8" style="display:inline-block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
 				</div>
-				<div class="col-wide">
 
-					<h3>Find a Pet</h3>
-					<p class="uppercase"></p>
-					<p>Sep 2017</p>
-					<p>Find a pet in local adoption shelters.</p>
-					</dic>
-					<!-- This list can be deleted if you don't want to use it. -->
-					<p>Features</p>
-					<ul>
-						<li>Search by your location or zip code</li>
-						<li>Search for animal type</li>
-						<li>Detailed pet descriptions</li>
-						<li>Detailed shelter contact</li>
-					</ul>
-					<div id="332746611936547151" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml">
-						<a href="https://itunes.apple.com/us/app/find-a-pet/id1226531779?mt=8" style="display:inline-block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
-					</div>
-
-				</div>
-				<!-- Add as many paragraphs as you need. -->
-				<div class="col-narrow job-description">
-					<img class="app-img" src="img/fp1.png" alt="Find a Pet">
-
-					<!-- end of Job Details block. -->
-				</div>
+			</div>
+			<div class="ios-sidebar">
+				<img src="img/fp.png" alt="Find a Pet">
+			</div>
 		</section>
 	</main>
 
