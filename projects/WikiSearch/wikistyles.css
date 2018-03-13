@@ -1,0 +1,48 @@
+body {
+	background-color: rgb(47, 49, 79)
+}
+
+h1 {
+	color: rgb(223, 233, 247);
+	height: 100px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.result-row{
+	background: rgb(241, 246, 253);
+	border-radius: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.row h3{
+	color: rgb(34, 34, 178);
+	
+}
+
+.row p {
+	color: rgb(20, 20, 103);
+}
+
+.fader {
+	background-color: rgb(226, 241, 239);
+	-webkit-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+	transform: scale(1.0);
+	transition: transform 1s, background-color 1s;
+	/* transition: background-color 3s; */
+}
+
+.fader:hover
+{
+	background-color: rgb(162, 186, 237);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+	transform: scale(1.02);
+	transition:all .7s;
+}
+
+span {
+	display: none;
+}
