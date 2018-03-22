@@ -267,7 +267,9 @@ nav a.active {
 
 /* Projects
 -------------------------*/
-
+#projects {
+  padding: 20px 0;
+}
 .app-img {
   width: 75%;
 }
@@ -343,9 +345,11 @@ p+h3 {
   flex-direction: row;
   /* justify-content: center; */
   flex-flow: row wrap;
+  padding-bottom: 20px;
 }
 
 .web-projects-flex > div {
+  
   background-color: white;
   border: 2px solid;
   border-color: rgba(174, 180, 202, 0.575);;
@@ -372,6 +376,12 @@ p+h3 {
   /* #right-header{
     visibility: collapse;
   } */
+}
+
+/* -----Footer------- */
+.socialsvg {
+  max-width: 70px;
+  padding-left: 20px;
 }
 
 @media (min-width: 800px) {
